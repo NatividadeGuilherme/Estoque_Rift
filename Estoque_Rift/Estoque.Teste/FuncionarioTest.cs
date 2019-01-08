@@ -9,7 +9,7 @@ using Estoque.BLL;
 namespace Estoque.Teste
 {
     /// <summary>
-    /// Descrição resumida para FuncionarioTest
+    /// Descrição resumida para FuncionarioTestkk
     /// </summary>
     [TestClass]
     public class FuncionarioTest
