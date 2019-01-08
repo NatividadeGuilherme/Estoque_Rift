@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Estoque.Models
 {
-    public class Produto
+    public class Funcionario
     {
-
         public int Id { get; set; }
         public string Nome { get; set; }
+        public int Cpf { get; set; }
+        public string Email { get; set; }
     }
 }

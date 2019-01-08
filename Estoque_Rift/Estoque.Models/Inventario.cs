@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Estoque.Models
 {
-    public class Produto
+    public class Inventario
     {
-
         public int Id { get; set; }
-        public string Nome { get; set; }
+        public int ProdutoId { get; set; }
+        public int QuantidadeDisponpivel { get; set; }
+        public int QuantidadeMinima { get; set; }
     }
 }
