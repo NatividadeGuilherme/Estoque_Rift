@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.DAL", "Estoque.DAL\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.Teste", "Estoque.Teste\Estoque.Teste.csproj", "{F603BC99-3037-4E67-841B-5FF48D20E1CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.BLL", "Estoque.BLL\Estoque.BLL.csproj", "{86BD1848-73BF-4CC7-B83E-E1EA0B00084E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F603BC99-3037-4E67-841B-5FF48D20E1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F603BC99-3037-4E67-841B-5FF48D20E1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F603BC99-3037-4E67-841B-5FF48D20E1CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86BD1848-73BF-4CC7-B83E-E1EA0B00084E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86BD1848-73BF-4CC7-B83E-E1EA0B00084E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86BD1848-73BF-4CC7-B83E-E1EA0B00084E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86BD1848-73BF-4CC7-B83E-E1EA0B00084E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

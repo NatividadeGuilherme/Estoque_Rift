@@ -9,5 +9,6 @@ namespace Estoque.Models
     public interface IFuncionario
     {
         void Cadastrar(Funcionario funcionario);
+        List<Funcionario> ObterFuncionarios();
     }
 }
