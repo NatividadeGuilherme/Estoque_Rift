@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque_Rift", "Estoque_Rif
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.Models", "Estoque.Models\Estoque.Models.csproj", "{2AF9C65C-21EA-425A-91CE-1DF727D2ED83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.DAL", "Estoque.DAL\Estoque.DAL.csproj", "{AEDABDFD-D415-4CC1-B600-816B0816B9B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.Teste", "Estoque.Teste\Estoque.Teste.csproj", "{F603BC99-3037-4E67-841B-5FF48D20E1CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{2AF9C65C-21EA-425A-91CE-1DF727D2ED83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AF9C65C-21EA-425A-91CE-1DF727D2ED83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AF9C65C-21EA-425A-91CE-1DF727D2ED83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEDABDFD-D415-4CC1-B600-816B0816B9B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEDABDFD-D415-4CC1-B600-816B0816B9B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEDABDFD-D415-4CC1-B600-816B0816B9B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEDABDFD-D415-4CC1-B600-816B0816B9B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F603BC99-3037-4E67-841B-5FF48D20E1CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F603BC99-3037-4E67-841B-5FF48D20E1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F603BC99-3037-4E67-841B-5FF48D20E1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F603BC99-3037-4E67-841B-5FF48D20E1CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
