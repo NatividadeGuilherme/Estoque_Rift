@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque_Rift", "Estoque_Rift\Estoque_Rift.csproj", "{37AB1687-9E9A-44A3-94A2-63CD1938FEE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.Models", "Estoque.Models\Estoque.Models.csproj", "{2AF9C65C-21EA-425A-91CE-1DF727D2ED83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{37AB1687-9E9A-44A3-94A2-63CD1938FEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37AB1687-9E9A-44A3-94A2-63CD1938FEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37AB1687-9E9A-44A3-94A2-63CD1938FEE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF9C65C-21EA-425A-91CE-1DF727D2ED83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF9C65C-21EA-425A-91CE-1DF727D2ED83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF9C65C-21EA-425A-91CE-1DF727D2ED83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF9C65C-21EA-425A-91CE-1DF727D2ED83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
