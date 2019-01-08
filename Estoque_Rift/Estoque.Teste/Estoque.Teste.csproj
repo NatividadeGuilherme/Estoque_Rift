@@ -64,6 +64,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Estoque.BLL\Estoque.BLL.csproj">
+      <Project>{86bd1848-73bf-4cc7-b83e-e1ea0b00084e}</Project>
+      <Name>Estoque.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Estoque.DAL\Estoque.DAL.csproj">
       <Project>{aedabdfd-d415-4cc1-b600-816b0816b9b5}</Project>
       <Name>Estoque.DAL</Name>
