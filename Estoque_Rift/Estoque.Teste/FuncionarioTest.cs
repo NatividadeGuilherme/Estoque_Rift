@@ -27,12 +27,13 @@ namespace Estoque.Teste
            
             var funcionario = new Funcionario()
             {
-                Nome = "Eduardo Bastazzini",
-                Cpf = "45669435856",
-                Email = "eduardo@gmail.com"
+                Nome = "Antônio Silveira",
+                Cpf = "43970090802",
+                Email = "antonio@gmail.com"
             };
             bll.Cadastrar(funcionario);
         }
+
         [TestMethod]
         public void TestarBusca()
         {
