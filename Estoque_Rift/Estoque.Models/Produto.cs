@@ -8,7 +8,7 @@ namespace Estoque.Models
 {
     public class Produto
     {
-        public int Iddddd { get; set; }
+        public int Idddddkkkkkkk { get; set; }
         public string Nome { get; set; }
     }
 }
