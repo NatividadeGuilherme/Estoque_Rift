@@ -8,9 +8,9 @@ namespace Estoque.Models
 {
     public class Inventario
     {
-        public int Id { get; set; }
-        public int ProdutoId { get; set; }
-        public int QuantidadeDisponpivel { get; set; }
-        public int QuantidadeMinima { get; set; }
+        public int Id {get; set; }
+        public int ProdutoId {get; set; }
+        public int QuantidadeDisponivel {get; set; }
+        public int QuantidadeMinima {get; set; }
     }
 }
