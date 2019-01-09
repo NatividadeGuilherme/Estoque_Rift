@@ -8,7 +8,8 @@ namespace Estoque.Models
     {
         void CadastrarProduto(Produto produto);
         List<Produto> ObterTodosProdutos();
-        Produto ObterProduto(int IdProduto);
+        Produto ObterProdutoPorId(int Id);
         void AlterarProduto(Produto produto);
+        void ExcluirProduto(Produto produto);
     }
 }

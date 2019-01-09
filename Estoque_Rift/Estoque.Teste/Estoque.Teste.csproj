@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="FuncionarioTest.cs" />
     <Compile Include="InventarioTest.cs" />
+    <Compile Include="ProdutoTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

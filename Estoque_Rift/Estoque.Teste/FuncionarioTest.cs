@@ -21,6 +21,7 @@ namespace Estoque.Teste
             var dal = new FuncionarioDAL();
              bll = new FuncionarioBLL(dal);
         }
+
         [TestMethod]
         public void IncluirFuncionario()
         {      
@@ -36,7 +37,7 @@ namespace Estoque.Teste
         [TestMethod]
         public void TestarBusca()
         {
-            var listadeFuncionarios = bll.ObterFuncionarios();
+            List<Funcionario> listadeFuncionarios = bll.ObterFuncionarios();
 
             foreach(var funcionario in listadeFuncionarios)
             {
