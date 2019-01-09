@@ -17,10 +17,11 @@ namespace Estoque_Rift.App_Codigo
 
             return bll;
         }
-        //public static IProduto ObterBLLProduto()
-        //{
-        //    var dal = new ProdutoDAL();
-        //   // var bll = new ProdutoBLL();
-        //}
+        public static IProduto ObterBLLProduto()
+        {
+            var dal = new ProdutoDAL();
+            var bll = new ProdutoBLL(dal);
+            return bll;
+        }
     }
 }

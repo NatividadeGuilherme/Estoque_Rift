@@ -10,10 +10,10 @@ namespace Estoque_Rift.Controllers
     public class InventarioController : Controller
     {
         private IInventario _bllInventario;
-        readonly private ProdutoDAL produtoDAL;
+        readonly private IProduto _bllProduto;
         public InventarioController()
         {
-            produtoDAL = new ProdutoDAL();
+            _bllProduto = App_Codigo.ContainerIInstancias.ObterBLLProduto(); 
             var bll = App_Codigo.ContainerIInstancias.ObterBLLInventario();
             _bllInventario = bll;
         }
@@ -39,7 +39,7 @@ namespace Estoque_Rift.Controllers
                         IdInventario = item.Id,
                         QuantidadeDisponivel = item.QuantidadeDisponivel,
                         QuantidadeMinima = item.QuantidadeMinima,
-                        NomeProduto = produtoDAL.ObterProduto(item.ProdutoId).Nome
+                        NomeProduto = _bllProduto.ObterProdutoPorId(item.ProdutoId).Nome
                     }
                 );   
             }
