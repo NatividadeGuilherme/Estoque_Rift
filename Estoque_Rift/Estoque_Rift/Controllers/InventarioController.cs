@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+
 using Estoque.DAL;
 using Estoque.Models;
 using Estoque_Rift.Models;
@@ -25,6 +26,39 @@ namespace Estoque_Rift.Controllers
 
             var listaInventarioViewModel = ConverterParaViewModel(listaInventario);
             return View(listaInventarioViewModel);
+        }
+        public ActionResult Incluir()
+        {
+            ViewBag.Produtos = _bllProduto.ObterTodosProdutos();
+
+            return View();
+
+        }
+        [HttpPost]
+        public ActionResult Incluir(InventarioViewModel inventario)
+        {
+            try
+            {
+                var inventarioModel = ConverterParaModel(inventario);
+                _bllInventario.InclusaoInventario(inventarioModel);
+
+                return RedirectToAction("Index");
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public Inventario ConverterParaModel(InventarioViewModel inventario)
+        {
+            var inventarioModel = new Inventario()
+            {
+                Id = inventario.IdInventario,
+                ProdutoId = inventario.IdProduto,
+                QuantidadeDisponivel = inventario.QuantidadeDisponivel,
+                QuantidadeMinima = inventario.QuantidadeMinima
+            };
+            return inventarioModel;
         }
 
         public List<InventarioViewModel> ConverterParaViewModel(List<Inventario> listaInventario)
