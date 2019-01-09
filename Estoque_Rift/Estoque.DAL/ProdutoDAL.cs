@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Dapper;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Linq;
 
 namespace Estoque.DAL
 {
@@ -27,7 +28,14 @@ namespace Estoque.DAL
 
         public Produto ObterProduto(int IdProduto)
         {
-            throw new NotImplementedException();
+            var conecction = new SqlConnection(conexao);
+            string sql = @"Select * From 
+                                         Produto 
+                                   Where Id=@IdProduto";
+            conecction.Open();
+            var produto = conecction.Query<Produto>(sql, new { @IdProduto = IdProduto }).FirstOrDefault();
+            conecction.Close();
+            return produto;
         }
 
         public List<Produto> ObterTodosProdutos()

@@ -12,5 +12,6 @@ namespace Estoque.Models
         public int ProdutoId {get; set; }
         public int QuantidadeDisponivel {get; set; }
         public int QuantidadeMinima {get; set; }
+        
     }
 }

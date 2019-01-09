@@ -28,5 +28,10 @@ namespace Estoque.BLL
             }
             
         }
+
+        public List<Inventario> ListaInventario()
+        {
+            return _dalInventario.ListaInventario();
+        }
     }
 }

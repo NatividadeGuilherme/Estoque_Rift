@@ -9,7 +9,7 @@ namespace Estoque.Models
     public interface IInventario
     {
         void InclusaoInventario(Inventario inventario);
-        
+        List<Inventario> ListaInventario();
 
 
     }

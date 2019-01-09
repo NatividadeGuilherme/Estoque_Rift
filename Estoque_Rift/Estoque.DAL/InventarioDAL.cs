@@ -1,8 +1,10 @@
 ﻿using Dapper;
 using Estoque.Models;
 using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Linq;
 
 namespace Estoque.DAL
 {
@@ -19,6 +21,15 @@ namespace Estoque.DAL
             conection.Execute(sql, new { @ProdutoId = inventario.ProdutoId, @QuantidadeDisponivel = inventario.QuantidadeDisponivel,
                 @QuantidadeMinima = inventario.QuantidadeMinima });
             conection.Close();
+        }
+
+        public List<Inventario> ListaInventario()
+        {
+            var conection = new SqlConnection(conexao);
+            conection.Open();
+            var listaInventario =conection.Query<Inventario>("Select * From Inventario").ToList();
+            conection.Close();
+            return listaInventario;
         }
     }
 }

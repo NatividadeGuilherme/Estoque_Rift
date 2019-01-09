@@ -1,0 +1,29 @@
+﻿@model List<Estoque_Rift.Models.InventarioViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Ítens do Inventário</h2>
+
+<table class="table table-bordered table-condensed table-hover" >
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome Produto</th>
+            <th>Quant Disponível</th>
+            <th>Estoque Minímo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.IdInventario</td>
+                <td>@item.NomeProduto</td>
+                <td>@item.QuantidadeDisponivel</td>
+                <td>@item.QuantidadeMinima</td>
+            </tr>
+        }
+        
+    </tbody>
+</table>

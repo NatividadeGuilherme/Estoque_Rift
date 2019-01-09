@@ -144,13 +144,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Codigo\ContainerIInstancias.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InventarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\InventarioViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -192,10 +195,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Inventario\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -209,6 +212,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Estoque.BLL\Estoque.BLL.csproj">
+      <Project>{86bd1848-73bf-4cc7-b83e-e1ea0b00084e}</Project>
+      <Name>Estoque.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Estoque.DAL\Estoque.DAL.csproj">
+      <Project>{aedabdfd-d415-4cc1-b600-816b0816b9b5}</Project>
+      <Name>Estoque.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Estoque.Models\Estoque.Models.csproj">
+      <Project>{2af9c65c-21ea-425a-91ce-1df727d2ed83}</Project>
+      <Name>Estoque.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
