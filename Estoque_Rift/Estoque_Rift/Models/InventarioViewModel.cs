@@ -11,6 +11,7 @@ namespace Estoque_Rift.Models
         public string NomeProduto { get; set; }
         public int QuantidadeDisponivel { get; set; }
         public int QuantidadeMinima { get; set; }
+        public int IdProduto { get; set; }
 
     }
 }
