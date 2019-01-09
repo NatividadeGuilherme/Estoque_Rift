@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Estoque.DAL;
 using Estoque.Models;
+using Estoque.BLL;
 
 namespace Estoque.Teste
 {
@@ -17,13 +18,15 @@ namespace Estoque.Teste
         public void InserirItemInventario()
         {
             var dal = new InventarioDAL();
+            var bll = new InventarioBLL(dal);
 
-            dal.InclusaoInventario(new Inventario()
+            bll.InclusaoInventario(new Inventario()
             {
                 ProdutoId = 1,
-                QuantidadeDisponivel = 40,
-                QuantidadeMinima = 5
+                QuantidadeDisponivel = 50,
+                QuantidadeMinima = 10
             });
+
         }
     }
 }

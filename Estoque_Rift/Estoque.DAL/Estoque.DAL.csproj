@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="FuncionarioDAL.cs" />
     <Compile Include="InventarioDAL.cs" />
+    <Compile Include="ProdutoDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

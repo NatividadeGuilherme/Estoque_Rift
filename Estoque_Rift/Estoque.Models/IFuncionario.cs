@@ -10,5 +10,6 @@ namespace Estoque.Models
     {
         void Cadastrar(Funcionario funcionario);
         List<Funcionario> ObterFuncionarios();
+
     }
 }

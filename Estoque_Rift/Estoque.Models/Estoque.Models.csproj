@@ -45,6 +45,7 @@
     <Compile Include="IFuncionario.cs" />
     <Compile Include="IInventario.cs" />
     <Compile Include="Inventario.cs" />
+    <Compile Include="IProduto.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
