@@ -11,7 +11,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Estoque.Teste
 {
     [TestClass]
-    class ProdutoTest
+    public class ProdutoTest
     {
         private ProdutoBLL bll;
 

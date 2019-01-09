@@ -38,6 +38,11 @@ namespace Estoque.DAL
 
         public void ExcluirProduto(Produto produto)
         {
+            
+        }
+
+        public Produto ObterProdutoPorId(int IdProduto)
+        {
             var conecction = new SqlConnection(conexao);
             string sql = @"Select * From 
                                          Produto 
@@ -46,11 +51,6 @@ namespace Estoque.DAL
             var produto = conecction.Query<Produto>(sql, new { @IdProduto = IdProduto }).FirstOrDefault();
             conecction.Close();
             return produto;
-        }
-
-        public Produto ObterProdutoPorId(int IdProduto)
-        {
-            throw new NotImplementedException();
         }
 
         public List<Produto> ObterTodosProdutos()
