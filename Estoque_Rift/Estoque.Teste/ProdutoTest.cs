@@ -26,9 +26,42 @@ namespace Estoque.Teste
         {
             var produto = new Produto()
             {
-                Nome = "Coca-Cola"
+                Nome = "Sukita Guaraná"
             };
             bll.CadastrarProduto(produto);
+        }
+
+        [TestMethod]
+        public void AlterarProduto()
+        {
+            var produto = new Produto()
+            {
+                Id = 1,
+                Nome = "Fanta Uva"
+            };
+            bll.AlterarProduto(produto);
+        }
+
+        [TestMethod]
+        public void ExcluirProduto()
+        {
+            var produto = new Produto()
+            {
+                Id = 1
+            };
+            bll.ExcluirProduto(produto);
+        }
+
+        [TestMethod]
+        public void ObterProdutos()
+        {
+            var produto = bll.ObterTodosProdutos();
+            foreach(var euTentei in produto)
+            {
+                Console.WriteLine("Produto disponível: {0}", euTentei.Nome);
+              
+            }
+          
         }
     }
 }

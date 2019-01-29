@@ -38,7 +38,14 @@ namespace Estoque.DAL
 
         public void ExcluirProduto(Produto produto)
         {
-            
+            var connection = new SqlConnection(conexao);
+            string sql = @"Delete  
+                             from Produto
+                            Where Id
+                                = @Id";
+            connection.Open();
+            connection.Execute(sql, new { @Id = produto.Id });
+            connection.Close();
         }
 
         public Produto ObterProdutoPorId(int IdProduto)
